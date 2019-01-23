@@ -64,6 +64,16 @@
       <id>maven</id>
       <url>http://repo.maven.apache.org/maven2/</url>
     </repository>
+    <repository>
+      <id>aut-artifacts</id>
+      <url>http://raw.github.com/jrwiebe/aut-artifacts/master/mvn-repo</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <build>
@@ -590,6 +600,7 @@
       <groupId>org.apache.tika</groupId>
       <artifactId>tika-langdetect</artifactId>
       <version>1.19.1</version>
+      <classifier>shaded</classifier>
     </dependency>
     <dependency>
       <groupId>org.apache.tika</groupId>
